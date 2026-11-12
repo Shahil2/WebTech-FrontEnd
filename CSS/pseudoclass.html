@@ -18,12 +18,12 @@
         }
         button:hover{
             color: aqua;
-            background-color: black;
+            background-color: rgb(197, 43, 43);
         }
-        button:active{
+        /* button:active{
             color: rgb(24, 179, 86);
             background-color: black;
-        }
+        } */
         input:focus{
             background-color: antiquewhite;
         }
@@ -38,6 +38,9 @@
         }
         li:nth-child(3){
             color: chartreuse;
+        }
+        #check:checked+label{
+            color: #ea5050;
         }
 
     </style>
@@ -55,6 +58,9 @@
                 <li>JS</li>
                 <li>React</li>
             </ul>
+            <button disabled>Disabled</button>
+            <input type="checkbox" name="check" id="check" >
+            <label for="check">Language</label>
     </center>
 </body>
 </html>
