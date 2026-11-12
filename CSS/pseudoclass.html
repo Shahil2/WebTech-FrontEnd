@@ -5,21 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        label{
+            color: aqua;
+        }
         button{
             border: none;
             border-radius: 5px;
             background: #ea5050;
             color: aliceblue;
+            height: 30px;
+            width: 80px;
         }
         button:hover{
             color: aqua;
             background-color: black;
         }
+        button:active{
+            color: rgb(24, 179, 86);
+            background-color: black;
+        }
+        input:focus{
+            background-color: antiquewhite;
+        }
+        li:first-child{
+            color: brown;
+        }
+        li:last-child{
+            color: aqua;
+        }
+        li:nth-child(2){
+            color: bisque;
+        }
+        li:nth-child(3){
+            color: chartreuse;
+        }
+
     </style>
 </head>
-<body>
+<body style="background-color: black;">
     <center>
             <button>Click ME</button>
+            <br>
+            <br>
+            <label for="name" id="name" >Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your Name">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>React</li>
+            </ul>
     </center>
 </body>
 </html>
