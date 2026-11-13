@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <style>
+        li:first-of-type{
+            color: blue;
+        }
+        li:last-of-type{
+            color: green;
+        }
+        li:nth-child(3){
+            color: rgb(181, 13, 13);
+        }
+        li:nth-child(2){
+            color: rgb(186, 221, 29);
+        }
+        input:checked+label{
+            color: chocolate;
+            cursor: pointer;
+        }
+        input:focus{
+            background-color: aqua;
+        }
+        .bt{
+            border: none;
+            background-color: rgb(211, 125, 13);
+            border-radius: 5px;
+        }
+        .bt:hover{
+            background-color: blue;
+        }
+        .bt:active{
+            color: aqua;
+            background-color: black;
+        }
+    </style>
+</head>
+<body style="background-color: beige;">
+    <center>
+        <form action="">
+            <fieldset>SRF
+                <!-- Student Registration Form -->
+                <!-- <legend>Student Registration Form</legend> -->
+                 <br><br>
+                 
+                 <label for="fname" id="name">Name</label>
+                 <input type="text" name="fname" id="fname">
+                 <br><br>
+                 <label for="email">Email</label>
+                 <input type="email" name="email" id="email">
+                 <br><br>
+                 <label for="password">Password</label>
+                 <input type="password" name="password" id="password">
+                 <br><br>
+                 <input type="checkbox" name="css" id="css"><label for="css">CSS</label>
+                 <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                    <li>item 4</li>
+                 </ul>
+                 <button class="bt">SUBMIT</button>
+                 <button disabled>REGISTER</button>
+
+            </fieldset>
+
+        </form>
+    </center>
+</body>
+</html>
