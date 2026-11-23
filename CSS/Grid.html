@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .box{
+            /* background-color: aqua; */
+            /* height: 100px; */
+            /* width: 100px; */
+            border-radius: 20px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>CSS GRID PROPERTIES</h1>
+    <div class="container">
+        <div class="box"><img src="https://i.pinimg.com/736x/95/5c/d2/955cd2a8a4a37f357ae727aa3b1a32a0.jpg" alt="" srcset=""></div>
+        <div class="box"><img src="https://i.pinimg.com/736x/00/d1/27/00d12793e4eeae7cc16af7815c17a125.jpg" alt="" srcset=""></div>
+        <div class="box"><img src="https://i.pinimg.com/736x/68/4a/d4/684ad44df19f6e2bd52d323937661018.jpg" alt="" srcset=""></div>
+        <div class="box"><img src="https://i.pinimg.com/736x/5f/9c/1d/5f9c1d9d15167e0a59e6dad41e8556f9.jpg" alt="" srcset=""></div>
+        <div class="box"><img src="https://i.pinimg.com/736x/20/7e/21/207e2129f4d9dc5f0811581ca7ece4d0.jpg " alt="" srcset=""></div>
+        <div class="box"><img src="https://i.pinimg.com/736x/96/d1/b7/96d1b7181d9f085c5f82a2ec2c3978c2.jpg" alt="" srcset=""></div>
+    </div>
 </body>
 </html>
