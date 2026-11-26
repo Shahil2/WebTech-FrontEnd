@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: linear-gradient( rgb(5, 220, 34),rgb(207, 240, 24));
+            margin: 20px;
+            align-items: center;
+            transition: 3s;
+
+        }
+        .box1:hover{
+            transform: translate(100px,50px);
+            transform: rotate(180deg);
+            background: linear-gradient( rgb(205, 164, 16),rgb(24, 56, 240));
+        }
+        .box2:hover{
+            transform: translateX(100px);
+            transform: rotateX(180deg);
+            background: linear-gradient( rgb(205, 164, 16),rgb(24, 56, 240));
+
+        }
+        .box3:hover{
+            transform: translateY(100px);
+            transform: rotateY(180deg);
+            background: linear-gradient( rgb(205, 164, 16),rgb(24, 56, 240));
+        }
+        .box4:hover{
+            transform: translate3D(200px,200px,100px);
+            transform: rotatez(180deg);
+            background: linear-gradient( rgb(205, 164, 16),rgb(24, 56, 240));
+        }
+    </style>
+</head>
+<body>
+    <div class=" box box1">translate</div>
+    <div class="box box2">translateX</div>
+    <div class="box box3">translateY</div>
+    <div class="box box4">translate3D</div>
+</body>
+</html>
